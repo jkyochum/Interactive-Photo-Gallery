@@ -1,11 +1,21 @@
 #searchbar {
   width: 100%;
   text-align: center;
+  margin: 2rem 0;
+}
+
+#txtBox {
+  width: 50%;
+  min-width: 300px;
+  height: 35px;
 }
 
 #grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 90%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
