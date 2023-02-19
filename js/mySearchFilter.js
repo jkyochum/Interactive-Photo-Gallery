@@ -1,18 +1,26 @@
 
-function getImage() {
-    let imgArr = [];
-    let image = document.querySelector('img');
+function getImageTitle() {
+    let titleArr;
+    let images = document.querySelectorAll('img');
 
-    for (i = 0; i < 12; i++) {
-        imgArr[i] = image;
-        imgArr[i].id = `'${i + 1}'`;
+    for (let i = 0; i < images.length; i++) {
+        titleArr = images[i].title;
+        return titleArr;
     }
-    console.log(imgArr)
+
+
 }
 
 function search() {
     let userSearch = document.getElementById('search').value;
     userSearch = userSearch.toLowerCase();
-    console.log(x);
+    let titleArr;
+    let images = document.querySelectorAll('img');
+
+    for (let i = 0; i < images.length; i++) {
+        titleArr = images[i].title;
+        return titleArr;
+    }
+    console.log(getImageTitle());
 }
 
