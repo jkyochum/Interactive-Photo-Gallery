@@ -14,13 +14,21 @@ function getImageTitle() {
 function search() {
     let userSearch = document.getElementById('search').value;
     userSearch = userSearch.toLowerCase();
-    let titleArr;
+    let title;
     let images = document.querySelectorAll('img');
 
     for (let i = 0; i < images.length; i++) {
-        titleArr = images[i].title;
-        return titleArr;
+        title = images[i].title;
+        let result = title.includes(userSearch);
+
+        if (result) {
+            images[i].style.display = "block";
+        }
+        else {
+            images[i].style.display = "none";
+        }
     }
-    console.log(getImageTitle());
+
+
 }
 
