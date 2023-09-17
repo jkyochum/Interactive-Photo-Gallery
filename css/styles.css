@@ -184,10 +184,27 @@
     transform: scale(1);
   }
 }
+body {
+  margin: 0;
+}
+
+#logo svg {
+  width: 45px;
+  height: 45px;
+}
+
+#logoRect {
+  fill-opacity: 0.4;
+}
+
+#roundCornerRect {
+  fill-opacity: 0;
+}
+
 #searchbar {
   width: 100%;
   text-align: center;
-  margin: 2rem 0;
+  margin: 0 0 2rem;
 }
 
 #search {
@@ -206,6 +223,4 @@
 
 .card {
   margin: auto;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
